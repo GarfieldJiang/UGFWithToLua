@@ -22,3 +22,11 @@
   - Copy Unity 5.x meta files to the right locations.
   - Change path constants in CustomSettings.cs and LuaConst.cs.
   - Add label 'LuaScript' for lua files so that they could be built into assetbundles.
+
+## Structure
+
+- Core functionality: `Assets/GameFrameworkExtensions/Lua/Scripts`
+- Usage example:
+  - `Assets/Scripts/ProcedureXXX.cs`
+  - `Assets/LuaScripts/XXX.lua`
+- Editor helper scripts: `Assets/Scripts/Editor`
