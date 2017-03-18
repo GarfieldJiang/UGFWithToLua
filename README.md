@@ -2,7 +2,7 @@
 
 ## GameFramework
 
-- URL: [https://github.com/EllanJiang/GameFramework](https://github.com/EllanJiang/GameFramework) 
+- URL: [GameFramework](https://github.com/GameFramework/GameFramework) 
 
 - Commit: dc1ea7ccced00c834437a3f347b5dd72549bf36f
 
@@ -12,7 +12,7 @@
 
 ## ToLua
 
-- URL: [https://github.com/topameng/tolua](https://github.com/topameng/tolua)
+- URL: [Tolua](https://github.com/topameng/tolua)
 
 - Commit: ea55728d57473bcf1a36e818f9e81bb1be0a0f25
 
