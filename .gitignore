@@ -1,0 +1,47 @@
+# =============== #
+# Unity generated #
+# =============== #
+[Tt]emp/
+[Oo]bj/
+[Uu]nityGenerated/
+[Ll]ibrary/
+[Aa]ssets/AssetStoreTools*
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+ExportedObj/
+*.svd
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln
+*.user
+*.unityproj
+*.booproj
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# ==================== #
+# Unity Game Framework #
+# ==================== #
+Assets/GameFramework/Config/AssetBundleBuilder.xml
+Assets/GameFramework/Config/AssetBundleBuilder.xml.meta
+
+# ============= #
+# Unity project #
+# ============= #
+Assets/StreamingAssets/
+!Assets/StreamingAssets/.gitkeep
+
