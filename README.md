@@ -49,4 +49,4 @@
 
 - Currently `.lua` files will be recoginized by Unity as default assets, rather than the text assets, so that you cannot load them directly from some asset bundle. So `AssetBundleBuilder.cs` add `.bytes` extension to the file names before building asset bundles and revert them afterwards.
 
-- Zero Brane Studio debug is not supported yet.
+- [Zero Brane Studio](https://studio.zerobrane.com) debug is not supported yet. See ToLua's `LuaClient` class for relative details.
