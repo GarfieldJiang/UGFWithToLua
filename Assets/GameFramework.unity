@@ -564,6 +564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_EditorSearchPaths:
   - LuaScripts
+  m_UseZeroBraneStudioDebugger: 1
 --- !u!1 &1016332022
 GameObject:
   m_ObjectHideFlags: 0
