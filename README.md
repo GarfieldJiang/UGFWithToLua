@@ -47,4 +47,4 @@
 
 - If you tick `Editor resource mode` on the `Base Component` of Game Framework, `CustomLuaLoader` reads the Lua files on the disk. Otherwise, the project, when launched, first loads the asset bundles that contain Lua scripts so that `CustomLuaLoader` gets the script contents later from the loaded (and hence cached) texts.
 
-- Currently `.lua` files will be recoginized by Unity as default assets, rather than the text assets, so that you cannot load them directly from some asset bundle. So `AssetBundleBuilder.cs` add `.bytes` extension to the file names before building asset bundles and revert them afterwards.
+- Currently `.lua` files will be recoginized by Unity as default assets, rather than text assets, so that you cannot load them directly from some asset bundle. So `AssetBundleBuilder.cs` add `.bytes` extension to the file names before building asset bundles and revert them afterwards.
