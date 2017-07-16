@@ -13,12 +13,16 @@ namespace UnityGameFramework.Runtime.Lua
     /// </summary>
     public class LuaComponent : GameFrameworkComponent
     {
+        /// <summary>
+        /// Lua 文件在 AssetBundle 中的扩展名。
+        /// </summary>
+        public const string LuaAssetExtInBundle = ".bytes";
+
         private LuaState m_LuaState = null;
         private LuaLooper m_LuaLooper = null;
 
         private Dictionary<string, byte[]> m_CachedLuaScripts = new Dictionary<string, byte[]>();
 
-#if UNITY_EDITOR
         [SerializeField, Tooltip("Lua script search paths relative to 'Assets/' for editor use.")]
         private string[] m_EditorSearchPaths = null;
 
@@ -27,7 +31,6 @@ namespace UnityGameFramework.Runtime.Lua
 
         [SerializeField, Tooltip("ZeroBraneStudio debug path.")]
         private string m_ZeroBraneStudioDebugPath = "C:/ZeroBraneStudio/lualibs/mobdebug";
-#endif
 
         public delegate void OnLoadScriptSuccess(string fileName);
         public delegate void OnLoadScriptFailure(string fileName, LoadResourceStatus status, string errorMessage);
@@ -86,7 +89,7 @@ namespace UnityGameFramework.Runtime.Lua
                 loadAssetFailureCallback: OnLoadAssetFailure);
             var userData = new LoadLuaScriptUserData { FileName = fileName, OnSuccess = onSuccess, OnFailure = onFailure };
 
-            assetPath += ".bytes";
+            assetPath += LuaAssetExtInBundle;
             GameEntry.GetComponent<ResourceComponent>().LoadAsset(assetPath, innerCallbacks, userData);
         }
 
@@ -173,16 +176,12 @@ namespace UnityGameFramework.Runtime.Lua
             m_LuaState.OpenLibs(LuaDLL.luaopen_pb);
             m_LuaState.OpenLibs(LuaDLL.luaopen_struct);
             m_LuaState.OpenLibs(LuaDLL.luaopen_lpeg);
-#if UNITY_STANDALONE_OSX || UNITY_EDITOR_OSX
             m_LuaState.OpenLibs(LuaDLL.luaopen_bit);
-#endif
 
-#if UNITY_EDITOR
-            if (m_UseZeroBraneStudioDebugger)
+            if (Application.isEditor && m_UseZeroBraneStudioDebugger)
             {
                 StartZbsDebugger();
             }
-#endif
         }
 
         private void Bind()
@@ -199,15 +198,13 @@ namespace UnityGameFramework.Runtime.Lua
 
         private void AddSearchPaths()
         {
-#if UNITY_EDITOR
-            if (GameEntry.GetComponent<BaseComponent>().EditorResourceMode)
+            if (Application.isEditor && GameEntry.GetComponent<BaseComponent>().EditorResourceMode)
             {
                 for (int i = 0; i < m_EditorSearchPaths.Length; ++i)
                 {
                     m_LuaState.AddSearchPath(Utility.Path.GetCombinePath(Application.dataPath, m_EditorSearchPaths[i]));
                 }
             }
-#endif
         }
 
         private void OnLoadAssetFailure(string assetName, LoadResourceStatus status, string errorMessage, object userData)
@@ -246,7 +243,6 @@ namespace UnityGameFramework.Runtime.Lua
             return m_CachedLuaScripts.TryGetValue(fileName, out buffer);
         }
 
-#if UNITY_EDITOR
         private void StartZbsDebugger(string ip = "localhost")
         {
             if (!GameEntry.GetComponent<BaseComponent>().EditorResourceMode)
@@ -280,18 +276,17 @@ namespace UnityGameFramework.Runtime.Lua
             m_LuaState.EndPreLoad();
         }
 
-        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        [MonoPInvokeCallback(typeof(LuaCSFunction))]
         static int LuaOpen_Socket_Core(IntPtr L)
         {
             return LuaDLL.luaopen_socket_core(L);
         }
 
-        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        [MonoPInvokeCallback(typeof(LuaCSFunction))]
         static int LuaOpen_Mime_Core(IntPtr L)
         {
             return LuaDLL.luaopen_mime_core(L);
         }
-#endif
 
 
         private class LoadLuaScriptUserData

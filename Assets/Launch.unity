@@ -257,6 +257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ResourceMode: 1
+  m_ReadWritePathType: 0
   m_UnloadUnusedAssetsInterval: 60
   m_AssetAutoReleaseInterval: 60
   m_AssetCapacity: 64
@@ -314,7 +315,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f05eaceeebe870a4595e51f998ed518b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Skin: {fileID: 11400000, guid: a4c1cc1e6676f0e48a527bad48941f98, type: 2}
+  m_Skin: {fileID: 0}
+  m_ActiveWindow: 0
   m_ShowFullWindow: 0
   m_ConsoleWindow:
     m_LockScroll: 1
@@ -564,7 +566,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_EditorSearchPaths:
   - LuaScripts
-  m_UseZeroBraneStudioDebugger: 1
+  m_UseZeroBraneStudioDebugger: 0
+  m_ZeroBraneStudioDebugPath: C:/ZeroBraneStudio/lualibs/mobdebug
 --- !u!1 &1016332022
 GameObject:
   m_ObjectHideFlags: 0
@@ -779,7 +782,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1342680738}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bce74f1e5cc23744b1d98e310efed1f, type: 3}
+  m_Script: {fileID: 11500000, guid: ed5533de69c4e5a4dabc7c23fce1fa98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EnablePlaySoundSuccessEvent: 1
@@ -787,6 +790,7 @@ MonoBehaviour:
   m_EnablePlaySoundUpdateEvent: 0
   m_EnablePlaySoundDependencyAssetEvent: 0
   m_InstanceRoot: {fileID: 0}
+  m_AudioMixer: {fileID: 0}
   m_SoundHelperTypeName: UnityGameFramework.Runtime.DefaultSoundHelper
   m_CustomSoundHelper: {fileID: 0}
   m_SoundGroupHelperTypeName: UnityGameFramework.Runtime.DefaultSoundGroupHelper
@@ -1039,6 +1043,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_EditorResourceMode: 0
   m_EditorLanguage: 0
+  m_ZipHelperTypeName: UnityGameFramework.Runtime.ZipHelper
+  m_JsonHelperTypeName: UnityGameFramework.Runtime.JsonHelper
+  m_ProfilerHelperTypeName: UnityGameFramework.Runtime.ProfilerHelper
   m_FrameRate: 30
   m_GameSpeed: 1
   m_RunInBackground: 0

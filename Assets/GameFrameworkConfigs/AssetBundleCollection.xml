@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UnityGameFramework>
+  <AssetBundleCollection>
+    <AssetBundles>
+      <AssetBundle Name="LuaScripts" LoadType="0" Packed="False" />
+      <AssetBundle Name="ToLua" LoadType="0" Packed="False" />
+    </AssetBundles>
+    <Assets>
+      <Asset Guid="02ba9c90e50e89e4da2ee869851300a0" AssetBundleName="ToLua" />
+      <Asset Guid="08700fd491ce4cf4ba55fd9832b9f9cf" AssetBundleName="ToLua" />
+      <Asset Guid="091b02c3490daac4f8ed8cd5b62090b1" AssetBundleName="ToLua" />
+      <Asset Guid="0f2e1d9dee4ecaf4b8734c59f1c9f3b5" AssetBundleName="ToLua" />
+      <Asset Guid="11ebbcbb210e532448bcc1440a557d8f" AssetBundleName="ToLua" />
+      <Asset Guid="209e83764932d974287e82cda5febaf7" AssetBundleName="ToLua" />
+      <Asset Guid="2dab8762e884a1c469dd11f6d2044a0f" AssetBundleName="ToLua" />
+      <Asset Guid="3697c841f98720444b380cc2756c17ea" AssetBundleName="ToLua" />
+      <Asset Guid="38d553dac9a25c84c9c7d74608783a1b" AssetBundleName="ToLua" />
+      <Asset Guid="3cb3ad8be0f474f4c997acf1b791b133" AssetBundleName="ToLua" />
+      <Asset Guid="436d981c3546acd44a03048767c0d85a" AssetBundleName="ToLua" />
+      <Asset Guid="447334b96205b8040b534702d8d806c6" AssetBundleName="ToLua" />
+      <Asset Guid="48ee0c1b8478eba4f9338e5ec4a14d40" AssetBundleName="ToLua" />
+      <Asset Guid="4df6e3671aafc8e4d82fee6a2cf5948e" AssetBundleName="ToLua" />
+      <Asset Guid="5040eeedfb5e1bf4b8a5294bba19ca0b" AssetBundleName="ToLua" />
+      <Asset Guid="54770d2645593c347ac25713a6d332e3" AssetBundleName="ToLua" />
+      <Asset Guid="59c27d5459f0dfc4ab1077ce6f391ea9" AssetBundleName="ToLua" />
+      <Asset Guid="5cfbc4fb807d4e444bd41df7de6c249e" AssetBundleName="ToLua" />
+      <Asset Guid="5fb16f8ece254ef4d9c196242b49a8ae" AssetBundleName="ToLua" />
+      <Asset Guid="62876db61c32bf6499db08ea59ccff1f" AssetBundleName="ToLua" />
+      <Asset Guid="63c3bb6af007b6344af9a86ef0b7e225" AssetBundleName="ToLua" />
+      <Asset Guid="69692ffc56243fb4a8d655a208364fec" AssetBundleName="ToLua" />
+      <Asset Guid="6f6ae256ba8bd244692e687b1b0ece95" AssetBundleName="ToLua" />
+      <Asset Guid="707a4e1a225007d45923200abf2c9c13" AssetBundleName="ToLua" />
+      <Asset Guid="7778f4f6aeddbee43984c5da8cc06953" AssetBundleName="ToLua" />
+      <Asset Guid="78de065ed4e50984eba196a41070d017" AssetBundleName="ToLua" />
+      <Asset Guid="7ad071edc48d0d8469028957a2df9c67" AssetBundleName="ToLua" />
+      <Asset Guid="7d703a862f37cfb42a2937b6f2cc9df6" AssetBundleName="ToLua" />
+      <Asset Guid="7e294d4af7e55084dadac8ee7a76099d" AssetBundleName="ToLua" />
+      <Asset Guid="8643f0e46fe222e48919766d7b0c7c5f" AssetBundleName="ToLua" />
+      <Asset Guid="8d399cec389f78c4791632413c86efb8" AssetBundleName="LuaScripts" />
+      <Asset Guid="99e0d332d92e1c44ca56267a2b3bdcf9" AssetBundleName="ToLua" />
+      <Asset Guid="a3971497c90061f4d9c0e9a99b5bbcbe" AssetBundleName="ToLua" />
+      <Asset Guid="a7edd4f2975d3f54f8396b61d8b34944" AssetBundleName="ToLua" />
+      <Asset Guid="afc64cedbe4a843499e187d95d272f06" AssetBundleName="ToLua" />
+      <Asset Guid="b091e6d28e2ea5b469fa0ef87c372f3a" AssetBundleName="ToLua" />
+      <Asset Guid="b179323d673f3f04996fc0b22c0817bb" AssetBundleName="ToLua" />
+      <Asset Guid="b7e8b1ba4c06a4d4db879ad831cb62f1" AssetBundleName="ToLua" />
+      <Asset Guid="bc8181e6244125146a87c5b83c380a92" AssetBundleName="ToLua" />
+      <Asset Guid="c7ac60fc5e653564588e60deb91863ee" AssetBundleName="ToLua" />
+      <Asset Guid="d6b21c50e0c10c840bb4965a6b03fdc1" AssetBundleName="ToLua" />
+      <Asset Guid="e891968e6d367cf4da81d8c24a52c358" AssetBundleName="ToLua" />
+      <Asset Guid="ebac0a3bf4e463249a78081c5cc3abcf" AssetBundleName="ToLua" />
+      <Asset Guid="ec5270fc0e79e1140be77c303c4874c4" AssetBundleName="ToLua" />
+      <Asset Guid="f0d0ca55b7df3414aafaf11a39c13378" AssetBundleName="ToLua" />
+      <Asset Guid="f52d8d21085d51c42b5e27aca557bcd9" AssetBundleName="ToLua" />
+      <Asset Guid="f81b525c8aa6ab6408db2989c91556cc" AssetBundleName="ToLua" />
+      <Asset Guid="fab9e4d6fcf702740a4c66965903ed1f" AssetBundleName="ToLua" />
+    </Assets>
+  </AssetBundleCollection>
+</UnityGameFramework>

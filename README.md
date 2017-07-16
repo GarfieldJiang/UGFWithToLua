@@ -1,16 +1,9 @@
-# Integration of ToLua with Ellan Jiang's GameFramework
+# Integration of ToLua with Ellan Jiang's UnityGameFramework
 
-## GameFramework
+## UnityGameFramework
 
-- URL: [GameFramework](https://github.com/GameFramework/GameFramework) 
-
-- Commit: dc1ea7ccced00c834437a3f347b5dd72549bf36f
-
-- Modifications:
-  - Add necessary game objects and components in GameFramework.unity.
-    - Tick procedures on `Procedure Component` but still select `Procedure Launch` with which to run the project.
-    - Select `Package` mode on `Resource Component` so it won't check for resource update/download.
-  - Git ignore AssetBundleBuilder.xml since its output directory field depends on your own folder structure.
+- URL: [UnityGameFramework](https://github.com/EllanJiang/UnityGameFramework)
+- Used as a submodule.
 
 ## ToLua
 
@@ -37,7 +30,7 @@
 
 ## How to play the example
 
-- Download this repo and open it in Unity (5.3 or newer).
+- Download this repo, initialize the submodule, and open it in Unity (5.3 or newer).
 - Create your own AssetBundleBuilder.xml file according to Game Framework examples, especially the output directory for asset bundles.
 - When assets are imported and source files are compiled, there will be a `Game` menu showing in the Unity editor. Select it and click `Build AssetBundles` to build lua scripts into asset bundles.
 - Copy all `Package` assetbundles of the platform on which you're going to run the project into `Assets/StreamingAssets/`.

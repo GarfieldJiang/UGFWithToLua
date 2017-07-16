@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UnityGameFramework>
+  <AssetBundleEditor>
+    <Settings>
+      <SourceAssetRootPath>Assets</SourceAssetRootPath>
+      <SourceAssetSearchPaths>
+        <SourceAssetSearchPath RelativePath="ToLua" />
+        <SourceAssetSearchPath RelativePath="LuaScripts" />
+      </SourceAssetSearchPaths>
+      <SourceAssetUnionTypeFilter>t:Scene t:Prefab t:Shader t:Model t:Material t:Texture t:AudioClip t:AnimationClip t:AnimatorController t:Font t:TextAsset t:ScriptableObject</SourceAssetUnionTypeFilter>
+      <SourceAssetUnionLabelFilter>l:LuaScript</SourceAssetUnionLabelFilter>
+      <SourceAssetExceptTypeFilter>t:Script</SourceAssetExceptTypeFilter>
+      <SourceAssetExceptLabelFilter>l:AssetBundleExclusive</SourceAssetExceptLabelFilter>
+      <AssetSorter>Name</AssetSorter>
+    </Settings>
+  </AssetBundleEditor>
+</UnityGameFramework>

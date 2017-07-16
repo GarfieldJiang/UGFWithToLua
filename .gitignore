@@ -36,8 +36,8 @@ Thumbs.db
 # ==================== #
 # Unity Game Framework #
 # ==================== #
-Assets/GameFramework/Config/AssetBundleBuilder.xml
-Assets/GameFramework/Config/AssetBundleBuilder.xml.meta
+Assets/GameFrameworkConfigs/AssetBundleBuilder.xml
+Assets/GameFrameworkConfigs/AssetBundleBuilder.xml.meta
 
 # ============= #
 # Unity project #
